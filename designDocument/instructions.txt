@@ -1,6 +1,6 @@
-1���Ƿ���ʵ��permissionGroup�Զ��壬��Ӧ����Ҫ��Ȩ�޹鵽һ�������У�ֻҪһ����Ȩ�����ɴﵽ����Ȩ�ޱ���Ȩ��
-Answer��Android��permissionGroup(Ȩ�޷���)��ʵ����frameworks/base/core/res /AndroidManifest.xml���ж��壬
-���Ȼᶨ��һ��������ʽ��permissionGroup�����Կ������ǣ�ʹ����permission-group��ǩ��
+1、是否能实现permissionGroup自定义，把应用需要的权限归到一个分类中，只要一次授权，即可达到所有权限被授权？
+Answer：Android的permissionGroup(权限分类)的实现在frameworks/base/core/res /AndroidManifest.xml中有定义，
+首先会定义一个如下样式的permissionGroup，可以看见的是，使用了permission-group标签。
 <permission-group android:name="android.permission-group.COST_MONEY"  
     android:label="@string/permgrouplab_costMoney"  
     android:description="@string/permgroupdesc_costMoney" /> 
@@ -10,9 +10,9 @@ Answer��Android��permissionGroup(Ȩ�޷���)��ʵ����frameworks/base/core/res /Andr
     android:protectionLevel="dangerous"  
     android:label="@string/permlab_sendSms"  
     android:description="@string/permdesc_sendSms" /> 
-�����permission -> "android.permission.SEND_SMS" ������android:permissionGroup���Եġ�
-��Ȼ���Զ����ǿ��Եġ����ǽ����������ص�ϵͳ���Ƶķ�����˾������
-������APP������Android�ṩ�Ŀ�ԴAPIû���ṩ����ܣ������޷�������������
+这里的permission -> "android.permission.SEND_SMS" 中是有android:permissionGroup属性的。
+当然，自定义是可以的。但是仅仅针对于相关的系统定制的方案公司而讲。
+单纯的APP开发，Android提供的开源API没有提供该项功能；进而无法做到上述需求。
 
-2����������������Rom�ֻ���̬Ȩ�޷�����
-Answer��
+2、适配绝大多数定制Rom手机动态权限方案。
+Answer：
