@@ -1,3 +1,8 @@
+参考https://github.com/yanzhenjie/AndPermission.git
+当前动态权限申请设计：
+
+
+
 1、是否能实现permissionGroup自定义，把应用需要的权限归到一个分类中，只要一次授权，即可达到所有权限被授权？
 Answer：Android的permissionGroup(权限分类)的实现在frameworks/base/core/res /AndroidManifest.xml中有定义，
 首先会定义一个如下样式的permissionGroup，可以看见的是，使用了permission-group标签。

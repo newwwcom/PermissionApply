@@ -3,7 +3,7 @@
 ext{
     buildToolsVersion = "27.0.3"
     compileVersion = 27
-    minSdk = 23
+    minSdk = 14
     targetSdk = 27
     version_code = 1
     version_name = "1.0"

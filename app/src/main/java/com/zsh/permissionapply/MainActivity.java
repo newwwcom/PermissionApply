@@ -1,5 +1,6 @@
 package com.zsh.permissionapply;
 
+import android.Manifest;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,7 +18,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void init(){
         //PermissionRequest.build().apply(MainActivity.this, new String[]{"我", "们", "是", "中", "们", "国", "是", "人"});
-        PermissionRequest.build().apply(MainActivity.this);
+        PermissionRequest.build().apply(MainActivity.this, 1, new String[]{
+                Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                Manifest.permission.READ_PHONE_STATE
+        });
     }
 
     @Override

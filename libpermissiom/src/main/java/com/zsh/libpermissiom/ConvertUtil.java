@@ -11,7 +11,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class ConvertUtil {
 
     /*package*/
-    static Set<String> StrArrayToSet(String[] strings) {
+    static Set<String> StrArrayToSet(String... strings) {
         Set<String> result = new HashSet<>();
         for (String s : strings) {
             if (result.contains(s)) {
