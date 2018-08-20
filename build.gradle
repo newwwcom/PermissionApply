@@ -8,6 +8,13 @@ ext{
     version_code = 1
     version_name = "1.0"
     v7_version = "27.1.1"
+    dependencies = [
+            fragment  : 'com.android.support:support-fragment:27.1.1',
+            appCompat : 'com.android.support:appcompat-v7:27.1.1',
+            design    : 'com.android.support:design:27.1.1',
+
+            permission: 'com.yanzhenjie:permission:2.0.0-rc11'
+    ]
 }
 
 buildscript {
