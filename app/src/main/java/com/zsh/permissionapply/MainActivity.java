@@ -5,7 +5,8 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.zsh.libpermissiom.PermissionRequest;
+import com.zsh.libpermissionwarp.PermissionRequest;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void init(){
         //PermissionRequest.build().apply(MainActivity.this, new String[]{"我", "们", "是", "中", "们", "国", "是", "人"});
-        PermissionRequest.build().apply(MainActivity.this, 1, new String[]{
+        PermissionRequest.build().permissionApply(MainActivity.this, new String[]{
                 Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE,
                 Manifest.permission.READ_PHONE_STATE
         });

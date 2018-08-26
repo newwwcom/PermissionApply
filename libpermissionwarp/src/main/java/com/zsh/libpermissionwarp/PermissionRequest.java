@@ -53,7 +53,7 @@ public class PermissionRequest {
                         showSettingDialog(activity, ConvertUtil.StrArrayToList(permissions));
                     }
                 }
-            });
+            }).start();
     }
 
     private void showSettingDialog(Context context, final List<String> permissions) {

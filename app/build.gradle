@@ -22,7 +22,8 @@ android {
 }
 
 dependencies {
-    implementation project(':libpermissiom')
+//  implementation project(':libpermissiom')
+    implementation project(':libpermissionwarp')
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
