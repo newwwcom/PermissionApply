@@ -11,7 +11,7 @@ android {
 
         versionCode rootProject.ext.version_code
         versionName rootProject.ext.version_name
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "android.support.testpng.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -28,6 +28,6 @@ dependencies {
 
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation 'com.android.support.testpng:runner:1.0.2'
+    androidTestImplementation 'com.android.support.testpng.espresso:espresso-core:3.0.2'
 }

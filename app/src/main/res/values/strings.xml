@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PermissionApply</string>
+    <string name="clear">clear</string>
+    <string name="set_data">set</string>
 </resources>
